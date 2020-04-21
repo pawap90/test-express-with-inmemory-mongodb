@@ -1,7 +1,7 @@
 {
-  "name": "test-mongoose-inmemory",
+  "name": "test-express-with-inmemory-mongodb",
   "version": "1.0.0",
-  "description": "A sample project that demonstrates how to test mongoose operations through jest with an in-memory database.",
+  "description": "Sample project that demonstrates how to test express endpoints using super tests with an in-memory mongodb database.",
   "main": "app.js",
   "scripts": {
     "test": "jest --runInBand ./test",
@@ -30,7 +30,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "jest": "^24.9.0",
+    "jest": "^25.4.0",
     "mongodb-memory-server": "^6.2.4",
     "supertest": "^4.0.2"
   },
