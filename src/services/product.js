@@ -11,7 +11,7 @@ module.exports.create = async (product) => {
     if (!product)
         throw new Error('Missing product');
 
-    return await productModel.create(product);
+    return productModel.create(product);
 };
 
 /**
@@ -23,6 +23,6 @@ module.exports.getById = async (id) => {
 
     if (!product)
         throw new Error('Product not found');
-        
+
     return product;
 };

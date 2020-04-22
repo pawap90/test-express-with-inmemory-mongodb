@@ -7,9 +7,7 @@ const productService = require('../services/product');
  * Test
  */
 router.get('/test', async (req, res, next) => {
-
     return res.json({ message: 'success!' });
-
 });
 
 /**

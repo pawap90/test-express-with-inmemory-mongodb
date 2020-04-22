@@ -33,7 +33,6 @@ afterEach(() => {
  */
 describe('api/product ', () => {
     it('POST api/product should insert a product in the database', async () => {
-
         const res = await request(server)
             .post('/api/product')
             .send(productComplete);
@@ -42,7 +41,6 @@ describe('api/product ', () => {
     });
 
     it('GET api/product/:id should throw error if id not exists', async () => {
-
         const res = await request(server)
             .get('/api/product/5d6ede6a0ba62570afcedd3a');
 
@@ -53,20 +51,5 @@ describe('api/product ', () => {
 const productComplete = {
     name: 'iPhone 11',
     price: 699,
-    description: 'A new dual‑camera system captures more of what you see and love. '
-};
-
-const productMissingDescription = {
-    name: 'iPhone 11',
-    price: 699
-};
-
-const productMissingName = {
-    price: 699,
-    description: 'A new dual‑camera system captures more of what you see and love. '
-};
-
-const productMissingPrice = {
-    name: 'iPhone 11',
     description: 'A new dual‑camera system captures more of what you see and love. '
 };

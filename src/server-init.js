@@ -19,7 +19,7 @@ module.exports.startServer = async () => {
 
     // Error handling middleware.
     app.use((err, req, res, next) => {
-        res.status(500).send("Unexpected error");
+        res.status(500).json({ message: 'Unexpected error', err: err });
     });
 
     // Database connection.

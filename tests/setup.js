@@ -4,7 +4,6 @@ require('dotenv').config();
 const { MongoMemoryServer } = require('mongodb-memory-server');
 const mongoServer = new MongoMemoryServer();
 
-
 /**
  * Start in-memory db.
  * Setup the connection string env variable.
