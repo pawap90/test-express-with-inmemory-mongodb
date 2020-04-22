@@ -4,7 +4,7 @@
   "description": "Sample project that demonstrates how to test express endpoints using super tests with an in-memory mongodb database.",
   "main": "app.js",
   "scripts": {
-    "test": "jest --runInBand ./test",
+    "test": "jest --runInBand ./test --detectOpenHandles --forceExit",
     "lint": "./node_modules/.bin/eslint ./",
     "lint-fix": "./node_modules/.bin/eslint ./ --fix"
   },
